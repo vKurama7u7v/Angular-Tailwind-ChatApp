@@ -1,0 +1,41 @@
+section.section-video {
+  position: relative;
+  height: 100vh;
+}
+
+section.section-video video.video-bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.section-video .overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 12, 12, 0.8);
+}
+
+section.section-video.vh-auto .main-content {
+  position: relative;
+}
+
+section.section-video .main-content {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+section.section-video .main-content section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
