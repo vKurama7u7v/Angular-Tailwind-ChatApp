@@ -197,40 +197,41 @@
       <h1
         class="text-2xl font-semibold text-center text-rose-500 capitalize lg:text-3xl"
       >
-        Our Executive Team
+        Nuestro Equipo
       </h1>
 
       <p class="max-w-2xl mx-auto my-6 text-center text-light-300">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt
-        ex placeat modi magni quia error alias, adipisci rem similique, at omnis
-        eligendi optio eos harum.
+        Nuestro equipo está conformado por expertos en diversas áreas,
+        incluyendo el diseño, programación y testing.
       </p>
 
       <div
         class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3"
       >
+        <!--  -->
         <div
           class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-rose-500 rounded-xl"
+          *ngFor="let item of team"
         >
           <img
             class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
-            src="https://avatars.githubusercontent.com/u/72474524?v=4"
+            [src]="item.avatar"
             alt=""
           />
 
           <h1
             class="mt-4 text-2xl font-semibold text-rose-500 capitalize group-hover:text-white"
           >
-            Aurelio Marín
+            {{ item.name }}
           </h1>
 
           <p class="mt-2 text-gray-300 capitalize group-hover:text-gray-300">
-            Backend Developer
+            {{ item.rol }}
           </p>
 
           <div class="flex mt-3 -mx-2">
             <a
-              href="https://github.com/vKurama7u7v"
+              [href]="item.url"
               target="_blank"
               class="mx-2 text-gray-300 hover:text-gray-500 group-hover:text-white"
               aria-label="Github"
