@@ -11,6 +11,7 @@ import { ResetPasswordComponent } from './pages/auth/reset-password/reset-passwo
 import { ConfirmAccountFormComponent } from './components/forms/confirm-account-form/confirm-account-form.component';
 import { ResetPasswordFormComponent } from './components/forms/reset-password-form/reset-password-form.component';
 import { SectionVideoComponent } from './components/sections/section-video/section-video.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SectionVideoComponent } from './components/sections/section-video/secti
     ConfirmAccountFormComponent,
     ResetPasswordFormComponent,
     SectionVideoComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
